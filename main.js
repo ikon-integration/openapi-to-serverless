@@ -17,7 +17,7 @@ export class Converter {
             let convertedYML = this._parseOpenAPIToServeless(parsedYML);
             fs.writeFileSync(this.outPath, convertedYML);
             console.log("Converted with success!");
-            console.log(convertedYML)
+            //console.log(convertedYML)
         } catch(err) {
             console.error(err);
         } finally {
